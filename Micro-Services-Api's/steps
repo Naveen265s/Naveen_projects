@@ -1,0 +1,5 @@
+ToDo App:
+
+1. user => Api => 8020 -> user folder -> app.js, package.json, config.js, /bin/www
+
+create a folder called user inside your project 

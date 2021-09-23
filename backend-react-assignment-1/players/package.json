@@ -1,0 +1,21 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "backend sports react assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "backend test process"
+  },
+  "keywords": [
+    "backend",
+    "sports",
+    "app",
+    "api"
+  ],
+  "author": "Naveen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,7 @@
+Steps =>
+    npm init
+    npm install jsonwebtoken dotenv
+	npm i –save-dev nodemon
+    npm install express
+    npm install cors
+    

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- // Write a JavaScript program where the program takes a random integer between 1 to 10, 
+        // the user is then prompted to input a guess number. If the user input matches with guess number, 
+        // the program will display a message "Good Work" otherwise display a message "Not matched". -->
+
+    <input id="inputFiled" type=text />
+    <input type="button" onclick="check()" value="check" />
+    <p id="random"></p>
+    <div id="feedback"></div>
+    <script type="text/javascript">
+        // function print_current_page() {
+        //     window.print();
+        // }
+        // const radomNum = Math.floor(Math.random() * 10);
+
+        // const input = window.prompt('Please enter the value b/w 1 to 10');
+
+        // if (input <= radomNum) {
+        //     console.log("correct");
+        // } else{
+        //     console.log('not matched');
+        // }
+        // console.log(radomNum);
+        function check() {
+            var x = Math.floor((Math.random() * 10) + 1);
+            var i = document.getElementById('inputFiled').value;
+            var feedback = document.getElementById('feedback');
+            console.log(x);
+            if (i == x) {
+                feedback.innerHTML = 'Good Work';
+            } else {
+                feedback.innerHTML = 'Not matched';
+            }
+            return check;
+        }
+        check();
+    </script>
+</body>
+
+</html>

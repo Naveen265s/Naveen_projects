@@ -1,0 +1,56 @@
+Backend Node Js project, using Express API created, will use mongoose to connect Mongodb
+
+1.  installations
+    express,body-parser,mongoose,bcrypt
+      npm install express
+      npm install body-parser
+      npm install mongoose –save
+
+2.  Steps required.
+    a. In your project folder create api folder. inside api folder create another folder v1
+    b. inside v1 folder create a folder called users
+        1.create the schema in the entity file (user.entity.js)
+        2.create a dao (data access object) file (user.dao.js) , with functions for login, registration etc.
+        3.create service file (user.service.js)
+        4.create a controller file(user.controller.js), consume the service
+        5.create a route file (user.router.js), list of routes
+        6. create an index.js file, which would export the router file
+        
+    c.In your project folder create bin folder. createa afile called www.
+    d.In your project folder create a folder called config.
+      create appConfig.js file and index.js file
+    e.In your project folder create a folder called db
+      create connection.js file and index.js file
+    f. In your project folder create  a file called app.js
+    e. In your project folder create  a file called app.service.js
+    f. in package.json file type the foolowing
+    "scripts": {
+        "start": "node ./bin/www",
+
+
+About this project
+==================
+NodeJs, Express project
+    create
+    1.  api
+    2.  Mongodb connectivity
+    3.  Handling dat =. client side, perform crud operation on Mongodb
+
+    React Application(client) frontend  <==> express,Api, Backend  <==>  Mongodb,base
+
+
+Compilation ==> npm start (or) node ./bin/www
+                after we need go to the postman
+                in postman, set the post ==> enter the http://localhost:5000/api/v1/users/login
+                                                       http://localhost:5000/api/v1/users/register
+                                         ==> click on send, we will get the out put in terminal
+
+
+task --
+    flow of work files 
+    creation of files revserse order ==>  router => controller => service => dao => entity  
+    this is exection flow ==>  router => controller => service => dao => entity 
+
+
+
+

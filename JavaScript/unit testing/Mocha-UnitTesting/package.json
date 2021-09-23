@@ -1,0 +1,18 @@
+{
+  "name": "mocha-unittesting",
+  "version": "1.0.0",
+  "description": "Mocha unit testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "mocha"
+  ],
+  "author": "naveen",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.0.3"
+  }
+}

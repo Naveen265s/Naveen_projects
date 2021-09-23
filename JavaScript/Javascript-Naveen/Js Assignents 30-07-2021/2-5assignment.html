@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--	Write a JavaScript program to calculate multiplication and division of two numbers (input from user).  -->
+    <form>
+        <div>
+            <label>1st number</label>
+            <input type="number" id="firstNum" />
+        </div>
+        <div>
+            <label>2st number</label>
+            <input type="number" id="secNum" />
+        </div>
+        <button type="button" onclick="mulitpy()">multiplication</button>
+        <button type="button" onclick="divis()">division</button>
+        <p>The Result is :
+            <span id="result"></span>
+        </p>
+    </form>
+    <script>
+        // var value1 = document.getElementById("firstNum").value;
+        // var value2 = document.getElementById("secNum").value;
+
+        function mulitpy() {
+            var value1 = document.getElementById("firstNum").value;
+            var value2 = document.getElementById("secNum").value;
+            document.getElementById(
+                "result").innerHTML = value1 * value2;
+
+        }
+
+        function divis() {
+            var value1 = document.getElementById("firstNum").value;
+            var value2 = document.getElementById("secNum").value;
+            document.getElementById(
+                "result").innerHTML = value1 / value2;
+        }
+    </script>
+</body>
+
+</html>
